@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import "./Form.css"
-const Form = () => {
+import "./UserInput.css"
+const UserInput = () => {
 	const [userInput, setUserInput] = useState("")
 	const calculateHandler = (userInput) => {
 		// Should be triggered when form is submitted
@@ -28,10 +28,20 @@ const Form = () => {
 
 		// do something with yearlyData ...
 	}
-	const resetHandler = () => {}
+
+	const resetHandler = () => {
+		console.log("resetHandler")
+	}
+	const submitHandler = (e) => {
+		e.preventDefault()
+		console.log("submitHandler")
+	}
+	const changeHandler = () => {
+		console.log("changeHandler")
+	}
 	return (
 		<div>
-			<form className='form'>
+			<form onSubmit={submitHandler} className='form'>
 				<div className='input-group'>
 					<p>
 						<label htmlFor='current-savings'>Current Savings ($)</label>
@@ -58,7 +68,7 @@ const Form = () => {
 					<button type='reset' className='buttonAlt' onClick={resetHandler}>
 						Reset
 					</button>
-					<button type='submit' className='button' onClick={calculateHandler}>
+					<button type='submit' className='button'>
 						Calculate
 					</button>
 				</p>
@@ -67,4 +77,4 @@ const Form = () => {
 	)
 }
 
-export default Form
+export default UserInput

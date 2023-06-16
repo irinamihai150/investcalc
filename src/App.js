@@ -1,7 +1,7 @@
-// import logo from "./assets/investment-calculator-logo.png"
-import Form from "./components/Form"
+
 import Header from "./components/Header"
 import Table from "./components/Table"
+import UserInput from "./components/UserInput"
 
 function App() {
 	const calculateHandler = (userInput) => {
@@ -34,7 +34,7 @@ function App() {
 	return (
 		<div>
 			<Header />
-			<Form />
+			<UserInput/>
 			{/* Todo: Show below table conditionally (only once result data is available) */}
 			{/* Show fallback text if no data is available */}
 			<Table />
