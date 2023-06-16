@@ -1,44 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* background-color: #242a28; */
-  background: radial-gradient(#303b37, #1a1f1d);
-  color: #e1eeeb;
+	margin: 0;
+	font-family: "Quicksand", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* background-color: #242a28; */
+	background: radial-gradient(#4a22e9, #4da5e3);
+	color: #e1eeeb;
 }
 
-
-
 .button {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.25rem;
-  background: linear-gradient(180deg, #1f584b, #17493d);
-  color: #c2e9e0;
-  font-family: 'Roboto Condensed', sans-serif;
-  cursor: pointer;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 0.25rem;
+	background: linear-gradient(180deg, #bab2f1, #8f84ef);
+	color: #141615;
+	font-family: "Roboto Condensed", sans-serif;
+	cursor: pointer;
 }
 
 .buttonAlt {
-  font-family: 'Roboto Condensed', sans-serif;
-  border: none;
-  background: transparent;
-  color: #c2e9e0;
-  cursor: pointer;
+	font-family: "Roboto Condensed", sans-serif;
+	border: none;
+	background: transparent;
+	color: #0e0f0f;
+	cursor: pointer;
 }
 
 button:hover {
-  background: linear-gradient(180deg, #1b5346, #113c32);
+	background: linear-gradient(180deg, #8177cb, #1b3c62);
 }
 
 .buttonAlt:hover {
-  background: transparent;
-  color: #91e1d0;
+	background: transparent;
+	color: #91e1d0;
+}
+p {
+	color: black;
 }

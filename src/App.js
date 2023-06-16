@@ -1,4 +1,4 @@
-import logo from "./assets/investment-calculator-logo.png"
+// import logo from "./assets/investment-calculator-logo.png"
 import Form from "./components/Form"
 import Header from "./components/Header"
 import Table from "./components/Table"
