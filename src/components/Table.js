@@ -1,8 +1,8 @@
-import "./Table.css"
+import classes from "../Table.module.css"
 
 const Table = (props) => {
 	return (
-		<table className='result'>
+		<table className={classes.result}>
 			<thead>
 				<tr>
 					<th>Year</th>
@@ -15,15 +15,19 @@ const Table = (props) => {
 			<tbody>
 				{props.data.map((yearData) => (
 					<tr key={yearData.year}>
-						<td>{yearData.year}</td>
-						<td>{yearData.savingsEndOfYear.toFixed(2)}</td>
-						<td>{yearData.yearlyInterest.toFixed(2)}</td>
+						<td>${yearData.year}</td>
+						<td>${yearData.savingsEndOfYear.toFixed(2)}</td>
+						<td>${yearData.yearlyInterest.toFixed(2)}</td>
 						<td>
-							{(yearData.savingsEndOfYear -
+							$
+							{(
+								yearData.savingsEndOfYear -
 								props.initialInvestment -
-								yearData.yearlyContribution * yearData.year).toFixed(2)}
+								yearData.yearlyContribution * yearData.year
+							).toFixed(2)}
 						</td>
 						<td>
+							$
 							{props.initialInvestment +
 								yearData.yearlyContribution +
 								yearData.year}

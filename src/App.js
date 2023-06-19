@@ -40,7 +40,7 @@ function App() {
 					initialInvestment={userInput ? userInput["current-savings"] : 0}
 				/>
 			) : (
-				<p>No data available.</p>
+				<p style={{ textAlign: "center" }}>No data calculated yet.</p>
 			)}
 		</div>
 	)
