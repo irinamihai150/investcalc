@@ -34,7 +34,14 @@ function App() {
 		<div>
 			<Header />
 			<UserInput onCalculate={calculateHandler} />
-			{results ? <Table data={results} /> : <p>No data available.</p>}
+			{results ? (
+				<Table
+					data={results}
+					initialInvestment={userInput ? userInput["current-savings"] : 0}
+				/>
+			) : (
+				<p>No data available.</p>
+			)}
 		</div>
 	)
 }
