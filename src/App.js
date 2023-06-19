@@ -28,6 +28,7 @@ function App() {
 		}
 
 		setResults(yearlyData)
+		setUserInput(userInput)
 	}
 
 	return (
