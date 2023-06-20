@@ -22,7 +22,7 @@ const UserInput = (props) => {
 		setUserInput((prevInput) => {
 			return {
 				...prevInput,
-				[input]: value,
+				[input]: +value,
 			}
 		})
 	}
@@ -79,8 +79,12 @@ const UserInput = (props) => {
 						/>
 					</p>
 				</div>
-				<p className={classes.action}>
-					<button type='reset' className={classes.buttonAlt} onClick={resetHandler}>
+				<p className={classes.actions}>
+					<button
+						type='reset'
+						className={classes.buttonAlt}
+						onClick={resetHandler}
+					>
 						Reset
 					</button>
 					<button type='submit' className={classes.button}>
